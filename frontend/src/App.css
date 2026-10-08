@@ -1,0 +1,164 @@
+/* ========= Global ========= */
+:root{
+  --bg-start:#e0f2fe; /* sky-100 */
+  --bg-end:#c7d2fe;   /* indigo-200 */
+  --brand:#4f46e5;    /* indigo-600 */
+  --brand-strong:#4338ca; /* indigo-700 */
+  --accent:#60a5fa;   /* blue-400 */
+  --text:#0f172a;     /* slate-900 */
+  --muted:#334155;    /* slate-700 */
+  --card:#ffffff;
+  --border:#e5e7eb;
+  --success:#10b981;
+  --danger:#ef4444;
+}
+
+*{ box-sizing: border-box; }
+
+html, body {
+  height: 100%;
+}
+
+body{
+  margin:0;
+  font-family: "Poppins", system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  color: var(--text);
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+}
+
+/* ========= Map Tailwind-like utility classes used in App.js ========= */
+
+/* Page wrapper */
+.min-h-screen{
+  min-height: 100vh;
+}
+.bg-gradient-to-br{
+  /* already handled by body; keep as is in case root not full */
+  background: linear-gradient(135deg, var(--bg-start), var(--bg-end));
+}
+.flex{ display:flex; }
+.items-center{ align-items:center; }
+.justify-center{ justify-content:center; }
+.p-6{ padding:1.5rem; }
+
+/* Card */
+.w-full{ width:100%; }
+.max-w-2xl{ max-width: 42rem; } /* ~672px */
+.bg-white{ background:var(--card); }
+.shadow-2xl{
+  box-shadow:
+    0 10px 15px rgba(0,0,0,0.08),
+    0 4px 6px rgba(0,0,0,0.06);
+}
+.rounded-2xl{ border-radius: 1rem; }
+.p-8{ padding:2rem; }
+
+/* Heading */
+.text-3xl{ font-size: 1.875rem; line-height: 2.25rem; }
+.font-bold{ font-weight:700; }
+.text-center{ text-align:center; }
+.text-indigo-700{ color: var(--brand-strong); }
+.mb-6{ margin-bottom:1.5rem; }
+
+/* Inputs */
+.w-full{ width: 100%; }
+.mb-4{ margin-bottom: 1rem; }
+.p-3{ padding: 0.75rem; }
+.border{ border:1px solid var(--border); }
+.rounded-lg{ border-radius: 0.75rem; }
+
+/* Focus ring look */
+.focus\:ring-2:focus{
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79,70,229,.25);
+}
+.focus\:ring-indigo-400:focus{
+  box-shadow: 0 0 0 3px rgba(96,165,250,.35);
+}
+
+/* Sky-blue modern file input */
+input[type="file"]{
+  background: #f8fafc;
+  color: var(--muted);
+  cursor: pointer;
+}
+input[type="file"]::-webkit-file-upload-button{
+  appearance: none;
+  -webkit-appearance: none;
+  border: none;
+  background: white;
+  color: var(--brand-strong);
+  font-weight: 600;
+  padding: .6rem .9rem;
+  border-radius: .75rem;
+  margin-right: .75rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  border:1px solid var(--border);
+  transition: transform .05s ease, background .2s ease, box-shadow .2s ease;
+}
+input[type="file"]::file-selector-button{
+  appearance: none;
+  border: none;
+  background: white;
+  color: var(--brand-strong);
+  font-weight: 600;
+  padding: .6rem .9rem;
+  border-radius: .75rem;
+  margin-right: .75rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,.04);
+  border:1px solid var(--border);
+  transition: transform .05s ease, background .2s ease, box-shadow .2s ease;
+}
+input[type="file"]::-webkit-file-upload-button:hover,
+input[type="file"]::file-selector-button:hover{
+  background:#f1f5f9;
+}
+input[type="file"]::-webkit-file-upload-button:active,
+input[type="file"]::file-selector-button:active{
+  transform: translateY(1px);
+}
+
+/* Select (job role) */
+select{
+  background: #ffffff;
+  color: var(--text);
+  transition: box-shadow .2s ease, border-color .2s ease;
+}
+select:hover{
+  border-color:#cbd5e1;
+}
+
+/* Error box */
+.bg-red-100{
+  background:#fee2e2;
+}
+.text-red-600{
+  color:#dc2626;
+}
+.rounded-lg{ border-radius: .75rem; }
+
+/* Result card */
+.bg-gray-50{ background:#f8fafc; }
+.border{ border:1px solid var(--border); }
+.p-6{ padding:1.5rem; }
+
+/* Nice strong labels inside result */
+strong{
+  color: var(--brand-strong);
+}
+
+/* Optional subtle anim */
+.w-full.max-w-2xl.bg-white.shadow-2xl.rounded-2xl.p-8{
+  animation: pop .25s ease-out;
+}
+@keyframes pop{
+  from{ transform: scale(.98); opacity:.9; }
+  to{ transform: scale(1); opacity:1; }
+}
+
+/* Mobile tweaks */
+@media (max-width: 420px){
+  .text-3xl{ font-size: 1.5rem; }
+  .p-8{ padding:1.25rem; }
+}
+

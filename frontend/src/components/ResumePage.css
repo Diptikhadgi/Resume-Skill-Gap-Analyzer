@@ -1,0 +1,73 @@
+/* Resume Page Container */
+.resume-container {
+  background: #f9fafb;
+  border-radius: 16px;
+  padding: 20px;
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.resume-container:hover {
+  transform: translateY(-3px);
+}
+
+/* Section Titles */
+.resume-container h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #4f46e5;
+  margin-bottom: 12px;
+  border-bottom: 2px solid #e5e7eb;
+  padding-bottom: 6px;
+}
+
+/* Resume Info */
+.resume-item {
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #374151;
+}
+
+.resume-item strong {
+  color: #111827;
+  font-weight: 600;
+}
+
+/* Skills Tag Style */
+.skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 6px;
+}
+
+.skill-tag {
+  background: #eef2ff;
+  color: #4338ca;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Missing Skills */
+.missing-skill {
+  background: #fee2e2;
+  color: #b91c1c;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+/* Suggestions */
+.suggestions-box {
+  background: #ecfdf5;
+  color: #065f46;
+  padding: 15px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin-top: 15px;
+}

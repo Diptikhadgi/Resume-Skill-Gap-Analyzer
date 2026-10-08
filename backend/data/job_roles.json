@@ -1,0 +1,23 @@
+{
+  "Data Scientist": {
+    "expected_skills": ["python", "pandas", "numpy", "scikit-learn", "matplotlib", "machine learning", "statistics"],
+    "suggestions": "Consider learning Pandas for data analysis, scikit-learn for ML, and Matplotlib for data visualization. Projects and Kaggle competitions help build strong portfolios."
+  },
+  "Web Developer": {
+    "expected_skills": ["html", "css", "javascript", "react", "nodejs", "express", "mongodb"],
+    "suggestions": "Enhance your frontend skills with React, and backend with Node.js + Express. Build full-stack projects and deploy them on platforms like Vercel or Render."
+  },
+  "Android Developer": {
+    "expected_skills": ["java", "kotlin", "android studio", "xml", "firebase"],
+    "suggestions": "Learn Android development with Java or Kotlin. Practice building real apps and explore Firebase integration for backend services."
+  },
+  "Machine Learning Engineer": {
+    "expected_skills": ["python", "numpy", "pandas", "tensorflow", "keras", "machine learning", "deep learning"],
+    "suggestions": "Improve your deep learning skills with TensorFlow and Keras. Work on neural networks, CNNs, and model tuning with real datasets."
+  },
+  "DevOps Engineer": {
+    "expected_skills": ["linux", "docker", "kubernetes", "aws", "jenkins", "git"],
+    "suggestions": "Explore containerization with Docker and orchestration with Kubernetes. Learn CI/CD using Jenkins and cloud services like AWS."
+  }
+}
+
